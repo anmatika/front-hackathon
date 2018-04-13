@@ -1,11 +1,16 @@
 const service = {
   fetchNodes: () => {
-    const url = "http://anttim.northeurope.cloudapp.azure.com:3003/api/result";
-    fetch(url)
-      .then(response => {
-        return response.json();
-      })
-      .then(r => console.log(r));
+    const url = "http://anttim.northeurope.cloudapp.azure.com:3003/api/results";
+    return new Promise(resolve => {
+      fetch(url)
+        .then(response => {
+          return response.json();
+        })
+        .then(r => {
+          resolve(r);
+          console.log(r);
+        });
+    });
   },
   fetchNodesMock: () => {
     return new Promise(resolve => {
