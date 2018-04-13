@@ -1,8 +1,11 @@
+import request from "superagent";
 const service = {
   fetchNodes: () => {
     const url = "http://anttim.northeurope.cloudapp.azure.com:3003/api/results";
     return new Promise(resolve => {
-      fetch(url)
+      fetch(url, {
+        "Content-Type": "application/json",
+      })
         .then(response => {
           return response.json();
         })
@@ -11,6 +14,10 @@ const service = {
           console.log(r);
         });
     });
+  },
+  zoo: () => {
+    const url = "http://anttim.northeurope.cloudapp.azure.com:3003/api/results";
+    return request.get(url);
   },
   fetchNodesMock: () => {
     return new Promise(resolve => {

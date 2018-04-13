@@ -21,7 +21,7 @@ const NodeList = props => {
           <PaddedCardTitle>Nodes Up</PaddedCardTitle>
           <CardBody>
             {props.nodes
-              .filter(c => c.statusCode === "UP")
+              .filter(c => c.statusCode === "Up")
               .map(c => <Node key={uuidv4()} nodeName={c.nodeName} statusCode={c.statusCode} />)}
           </CardBody>
         </ShadowedCard>
@@ -31,7 +31,7 @@ const NodeList = props => {
           <PaddedCardTitle>Nodes Down</PaddedCardTitle>
           <CardBody>
             {props.nodes
-              .filter(c => c.statusCode === "DOWN")
+              .filter(c => c.statusCode === "Down")
               .map(c => <Node key={uuidv4()} nodeName={c.nodeName} statusCode={c.statusCode} />)}
           </CardBody>
         </ShadowedCard>

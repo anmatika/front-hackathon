@@ -9,23 +9,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 class NodesPage extends Component {
   componentDidMount() {
-    service.fetchNodes().then(d => {
-      const f = Object.keys(d)[0];
-      /*       const k = f.replace(/(\r\n\t|\n|\r\t)/gm, ""); */
-      // preserve newlines, etc - use valid JSON
-      /*  let s = f
-        .replace(/\\n/g, "\\n")
-        .replace(/\\'/g, "\\'")
-        .replace(/\\"/g, '\\"')
-        .replace(/\\&/g, "\\&")
-        .replace(/\\r/g, "\\r")
-        .replace(/\\t/g, "\\t")
-        .replace(/\\b/g, "\\b")
-        .replace(/\\f/g, "\\f"); */
-      // remove non-printable and other non-valid JSON chars
-      /*       s = s.replace(/[\u0000-\u0019]+/g, ""); */
-      const data = JSON.parse(f);
-      debugger;
+    service.zoo().then(d => {
+      const data = d.body;
       this.setState({ data });
     });
   }

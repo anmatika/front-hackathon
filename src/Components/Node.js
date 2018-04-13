@@ -7,14 +7,14 @@ import styled from "styled-components";
 
 const Node = props => {
   const { nodeName, statusCode } = props;
-  const color = statusCode === "UP" ? "success" : "danger";
+  const color = statusCode === "Up" ? "success" : "danger";
   const Delimiter = styled.span`
     margin-right: 10px;
   `;
   return (
     <div>
       <Alert color={color}>
-        <FontAwesomeIcon icon={statusCode === "UP" ? faThumbsUp : faFire} />
+        <FontAwesomeIcon icon={statusCode === "Up" ? faThumbsUp : faFire} />
 
         <Delimiter />
         {nodeName}
