@@ -20,7 +20,7 @@ const service = {
 						nodeName: 'QV-Node-v2'
 					},
 					{
-						statusCode: 'UP',
+						statusCode: 'DOWN',
 						nodeName: 'QV-Node-v3'
 					},
 					{
