@@ -20,13 +20,13 @@ class App extends Component {
 				<header className="App-header">
 					<h1 className="App-title">Drill All The Humans</h1>
 				</header>
-				<p className="App-intro">
+				<div className="App-intro">
 					{this.state != null && this.state.data != null ? (
 						<AppContainer nodes={this.state.data.nodes} />
 					) : (
 						<LoadingSpinner />
 					)}
-				</p>
+				</div>
 			</div>
 		);
 	}
