@@ -5,7 +5,8 @@ import faCoffee from "@fortawesome/fontawesome-free-solid/faCoffee";
 
 const LoadingSpinner = () => {
   const MarginSpan = styled.span`
-    margin-top: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   `;
 
   return (

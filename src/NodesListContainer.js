@@ -3,7 +3,7 @@ import styled from "styled-components";
 import NodeList from "./Components/NodeList";
 import { Container, Row, Col } from "reactstrap";
 
-const AppContainer = props => {
+const NodesListContainer = props => {
   const { nodes } = props;
   const MarginContainer = styled(Container)`
     margin-top: 50px;
@@ -15,4 +15,4 @@ const AppContainer = props => {
   );
 };
 
-export default AppContainer;
+export default NodesListContainer;
