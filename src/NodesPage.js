@@ -12,7 +12,7 @@ class NodesPage extends Component {
   componentDidMount() {
     service.zoo().then(d => {
       const data = d.body;
-      this.setState({ data });
+      this.setState({ data, foundIssue: data.nodes.filter(x => x.statusCode === "Down").length > 0 });
     });
   }
 
