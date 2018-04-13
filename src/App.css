@@ -23,6 +23,11 @@
 	margin: 1.5em;
 }
 
+.Status-picture-area {
+	width: 100%;
+	height: auto;
+}
+
 .App-intro {
 	font-size: large;
 }
