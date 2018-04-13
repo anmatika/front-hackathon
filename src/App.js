@@ -17,6 +17,14 @@ class App extends Component {
           statusCode: "Down",
           statusText: "Down",
         },
+        {
+          statusCode: "Down",
+          statusText: "Down",
+        },
+        {
+          statusCode: "UP",
+          statusText: "Is UP!!",
+        },
       ],
     };
 
