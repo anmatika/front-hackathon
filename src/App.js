@@ -11,19 +11,19 @@ class App extends Component {
       nodes: [
         {
           statusCode: "UP",
-          statusText: "UP",
+          statusText: "QV-Node-v1",
         },
         {
-          statusCode: "Down",
-          statusText: "Down",
+          statusCode: "DOWN",
+          statusText: "QV-Node-v2",
         },
         {
-          statusCode: "Down",
-          statusText: "Down",
+          statusCode: "DOWN",
+          statusText: "QV-Node-v3",
         },
         {
           statusCode: "UP",
-          statusText: "Is UP!!",
+          statusText: "QV-Node-v4",
         },
       ],
     };
