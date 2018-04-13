@@ -14,7 +14,7 @@ const NodeList = (props) => {
 					<CardBody>
 						{props.nodes
 							.filter((c) => c.statusCode === 'UP')
-							.map((c) => <Node key={uuidv4()} statusText={c.statusText} statusCode={c.statusCode} />)}
+							.map((c) => <Node key={uuidv4()} nodeName={c.nodeName} statusCode={c.statusCode} />)}
 					</CardBody>
 				</Card>
 			</Col>
@@ -24,7 +24,7 @@ const NodeList = (props) => {
 					<CardBody>
 						{props.nodes
 							.filter((c) => c.statusCode === 'DOWN')
-							.map((c) => <Node key={uuidv4()} statusText={c.statusText} statusCode={c.statusCode} />)}
+							.map((c) => <Node key={uuidv4()} nodeName={c.nodeName} statusCode={c.statusCode} />)}
 					</CardBody>
 				</Card>
 			</Col>
